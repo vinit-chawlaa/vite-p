@@ -1,0 +1,62 @@
+import React from 'react'
+
+const Project = () => {
+    return (
+        <div className='w-full py-10 lg:px-20 px-10' id='project'>
+            <h1 className='text-4xl py-10'>Work <span className='bg-gradient-to-r from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold'>Experience</span></h1>
+            <div className='grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center w-full  gap-10'>
+                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4d2289] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                    <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
+                        <div>
+                            <img src="/ai.png" alt="" className='object-contain h-full w-full' />
+                        </div>
+                        <div>
+                            <h2 className='text-3xl py-5'>AI Image Generator</h2>
+                            <p className='text-md text-gray-300'>AI-powered image generator built with Next.js and Tailwind CSS and Shadcin Ui.</p>
+                            <button className='px-5 py-2 my-5 cursor-pointer  hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300 text-white rounded-md bg-gradient-to-r from-[#6D28D9] to-[#5B21B6]'>Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                    <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
+                        <div>
+                            <img src="/deepseek.png" alt="" className='object-contain w-full h-full' />
+                        </div>
+                        <div>
+                            <h2 className='text-3xl py-5'>DeepSeek</h2>
+                            <p className='text-md text-gray-300'>DeepSeek Ai built with Next.js and Tailwind CSS and Shadcin Ui.</p>
+                            <button className='px-5 py-2 my-5 cursor-pointer  hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300 text-white rounded-md bg-gradient-to-r from-[#6D28D9] to-[#5B21B6]'>Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                    <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
+                        <div>
+                            <img src="/weather.png" alt="" className='object-contain h-full w-full' />
+                        </div>
+                        <div>
+                            <h2 className='text-3xl py-5'>Weather App</h2>
+                            <p className='text-md text-gray-300'>Weather App built with react.js and Tailwind CSS and Shadcin Ui.</p>
+                            <button className='px-5 py-2 my-5 cursor-pointer  hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300 text-white rounded-md bg-gradient-to-r from-[#6D28D9] to-[#5B21B6]'>Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                    <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
+                        <div>
+                            <img src="/man.png" alt="" className='object-contain h-full w-full' />
+                        </div>
+                        <div>
+                            <h2 className='text-3xl py-5'>Portfolio website</h2>
+                            <p className='text-md text-gray-300'>Portfolio website built with Next.js and Tailwind CSS and Shadcin Ui.</p>
+                            <button className='px-5 py-2 my-5 cursor-pointer  hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300 text-white rounded-md bg-gradient-to-r from-[#6D28D9] to-[#5B21B6]'>Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Project
