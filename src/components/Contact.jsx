@@ -39,16 +39,6 @@ const Contact = () => {
         setSubmitted(false);
       }, 2000);
     }
-
-    if (
-      !formdata.first ||
-      !formdata.last ||
-      !formdata.email ||
-      !formdata.phone ||
-      !formdata.message
-    ) {
-      toast.error("please fill all the fields..");
-    }
   };
 
   return (
@@ -59,61 +49,60 @@ const Contact = () => {
             Let's work together!
           </h1>
           <p className="text-gray-400 py-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
-            alias vitae molestiae ipsum ea cumque deleniti dicta accusantium
-            quos ad?
+            I'm always open to new ideas, challenges, and collaborations. Drop a
+            message — let’s make something meaningful.
           </p>
 
           <form className="grid grid-cols-2 gap-5 py-5" onSubmit={handlesubmit}>
             <div className="col-span-2 sm:col-auto">
-            <input
-              type="text"
-              className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
-              placeholder="First Name"
-              value={formdata.name}
-              onChange={handlechange}
-              name="first"
-              required
-            />
+              <input
+                type="text"
+                className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
+                placeholder="First Name"
+                value={formdata.name}
+                onChange={handlechange}
+                name="first"
+                required
+              />
             </div>
 
             <div className="col-span-2 sm:col-auto">
-            <input
-              type="text"
-              className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
-              placeholder="Last Name"
-              value={formdata.last}
-              onChange={handlechange}
-              name="last"
-              required
-            />
+              <input
+                type="text"
+                className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
+                placeholder="Last Name"
+                value={formdata.last}
+                onChange={handlechange}
+                name="last"
+                required
+              />
             </div>
-            
+
             <div className="col-span-2 sm:col-auto">
-            <input
-              type="text"
-              className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
-              placeholder="Email"
-              value={formdata.email}
-              onChange={handlechange}
-              name="email"
-              required
-            />
+              <input
+                type="email"
+                className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
+                placeholder="Email"
+                value={formdata.email}
+                onChange={handlechange}
+                name="email"
+                required
+              />
             </div>
             <div className="col-span-2 sm:col-auto">
-            <input
-              type="text"
-              className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
-              placeholder="Phone Number"
-              value={formdata.phone}
-              onChange={handlechange}
-              name="phone"
-              required
-            />
+              <input
+                type="text"
+                className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
+                placeholder="Phone Number"
+                value={formdata.phone}
+                onChange={handlechange}
+                name="phone"
+                required
+              />
             </div>
             <div className="col-span-2">
-              <select className="p-3 text-lg bg-black text-white w-full cursor-pointer focus:ring-2 focus:ring-purple-500">
-                <option value="" selected hidden>
+              <select className="p-3 text-lg bg-black text-white w-full cursor-pointer focus:ring-2 focus:ring-purple-500"  defaultValue="service">
+                <option value="service" hidden>
                   Select a Service
                 </option>
                 <option value="web-design">Web Design</option>

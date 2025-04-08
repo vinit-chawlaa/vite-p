@@ -1,7 +1,33 @@
+'use client'
+
 import { Facebook, Github, Linkedin, Mail, Twitter } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import Typed from 'typed.js'
 
 const Hero = () => {
+
+  const elref = useRef(null)
+
+  const defaultText = ['Web Developer' , 'UI UX Designer' , 'Problem Solver']
+
+
+  useEffect(() => {
+   const options = {
+    strings : defaultText,
+    typeSpeed : 60,
+    backSpeed : 60,
+    loop : true,
+    backDelay : 1000,
+  }
+
+  const typed = new Typed(elref.current , options)
+
+  return () => {
+    typed.destroy()
+  }
+  },[])
+
+
   return (
     <div className='px-5 lg:px-20 py-30 grid lg:grid-cols-2 grid-cols-1 gap-10 justify-items-center w-full items-center' id='home'>
        <div className='lg:max-w-[600px]'>
@@ -9,7 +35,7 @@ const Hero = () => {
        <h1 className='text-3xl lg:text-left text-center'>Hello I'm</h1>
         <h1 className='bg-gradient-to-r lg:text-left text-center text-5xl from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold'>Vinit Chawla</h1>
        <h1 className='text-3xl lg:text-left text-center'>
-           <span>Web Developer</span>
+           <span ref={elref}></span>
         </h1>
        </div>
         <p className='py-5 lg:text-left text-center'>I craft high-performance, responsive web applications that blend aesthetics with functionality.

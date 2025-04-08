@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { List } from "../lists/List";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
@@ -21,6 +21,7 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleresize);
   }, []);
 
+
   return (
     <div className="text-white flex bg-[#11071F] justify-between items-center shadow-sm shadow-gray-50 lg:px-20 px-5 py-6 fixed w-full z-[1000]">
       <div className="w-[100px] h-[50px] -mt-11 -ml-5">
@@ -37,7 +38,7 @@ const Navbar = () => {
             offset={-70}
           >
             <li key={item.id} className="relative group cursor-pointer py-1">
-              {item.name}{" "}
+              {item.name}
               <span className="absolute left-1/2 bottom-0 w-0 h-[3px] bg-purple-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
             </li>
           </Link>
