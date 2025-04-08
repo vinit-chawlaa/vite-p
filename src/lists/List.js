@@ -7,21 +7,23 @@ export const List = [
 
     {
         id : 2,
+        name : 'Project',
+         url : 'project'
+    },
+
+    {
+        id : 3,
         name : 'About',
          url : 'about'
     },
 
     {
-        id : 3,
+        id : 4,
         name : 'Skills',
         url : 'skills'
     },
 
-    {
-        id : 4,
-        name : 'Project',
-         url : 'project'
-    },
+   
 
     {
         id : 5,

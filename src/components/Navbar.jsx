@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="text-white flex bg-[#11071F] justify-between items-center shadow-sm shadow-gray-50 lg:px-20 px-10 py-6 fixed w-full z-[1000]">
+    <div className="text-white flex bg-[#11071F] justify-between items-center shadow-sm shadow-gray-50 lg:px-20 px-5 py-6 fixed w-full z-[1000]">
       <div className="w-[100px] h-[50px] -mt-11 -ml-5">
         <img src="/vc1.png" alt="" className="object-cover"/>
       </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
       </ul>
 
       <div className="md:hidden cursor-pointer" onClick={handletoggle}>
-        {toggle ? <X size={30} /> : <Menu size={30} />}
+        {toggle ? <X size={35} /> : <img src="/hb.png" alt="" className="w-9 invert"/>}
       </div>
 
       <div

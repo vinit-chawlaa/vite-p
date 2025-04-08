@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="w-full lg:px-20 px-10 py-10" id="skills">
+    <div className="w-full lg:px-20 px-5 py-10" id="skills">
       <h1 className="text-5xl py-10 bg-gradient-to-r  from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold">
         <span className="text-white px-3">MY</span>SKILLS
       </h1>

@@ -1,11 +1,17 @@
 import React from 'react'
+import Tilt from 'react-parallax-tilt'
+
+
+
 
 const Project = () => {
     return (
-        <div className='w-full py-10 lg:px-20 px-10' id='project'>
+
+        <div className='w-full pb-10 lg:px-20 px-5' id='project'>
             <h1 className='text-4xl py-10'>Work <span className='bg-gradient-to-r from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold'>Experience</span></h1>
             <div className='grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center w-full  gap-10'>
-                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4d2289] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+               <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500}   glareEnable={false} >
+               <div className='w-full min-h-[300px] hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4d2289] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/ai.png" alt="" className='object-contain h-full w-full' />
@@ -17,7 +23,9 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+               </Tilt>
+               <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500}   glareEnable={false} >
+                <div className='w-full  min-h-[300px]  hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/deepseek.png" alt="" className='object-contain w-full h-full' />
@@ -29,8 +37,11 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
+                </Tilt>
+                
 
-                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                <Tilt  tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500}   glareEnable={false} >
+                <div className='w-full  min-h-[300px] hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/weather.png" alt="" className='object-contain h-full w-full' />
@@ -42,7 +53,10 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full bg-white min-h-[300px] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                </Tilt>
+
+                <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500} glareEnable={false}>
+                <div className='w-full min-h-[300px]  hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/man.png" alt="" className='object-contain h-full w-full' />
@@ -54,6 +68,7 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
+                </Tilt>
             </div>
         </div>
     )
