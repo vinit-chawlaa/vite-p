@@ -9,6 +9,7 @@ import Skills from './Skills'
 import ScrollToTop from 'react-scroll-to-top'
 
 
+
 const Main = () => {
   return (
     <div className='bg-[#11071F] text-white w-full'>

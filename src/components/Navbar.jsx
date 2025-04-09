@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { List } from "../lists/List";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
+import {motion} from 'framer-motion'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="text-white flex bg-[#11071F] justify-between items-center shadow-sm shadow-gray-50 lg:px-20 px-5 py-6 fixed w-full z-[1000]">
+    <motion.div initial={{y : -100 , opacity : 0}} animate={{y : 0 , opacity : 1}} transition={{duration : 0.4 , delay : 0.2}} className="text-white flex bg-[#11071F] justify-between items-center shadow-sm shadow-gray-50 lg:px-20 px-5 py-6 fixed w-full z-[1000]">
       <div className="w-[100px] h-[50px] -mt-11 -ml-5">
         <img src="/vc1.png" alt="" className="object-cover"/>
       </div>
@@ -87,7 +88,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

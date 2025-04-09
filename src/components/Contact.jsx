@@ -36,9 +36,13 @@ const Contact = () => {
       setSubmitted(true);
       setTimeout(() => {
         toast.success("Your message sent sucessfully!");
+        setFormdata({first  : '' , last : '' , email : '' , phone : '' , message : ''})
         setSubmitted(false);
       }, 2000);
+      
     }
+
+
   };
 
   return (
@@ -59,7 +63,7 @@ const Contact = () => {
                 type="text"
                 className=" p-3 text-lg bg-black rounded-md outline-none w-full focus:ring-2 focus:ring-purple-500"
                 placeholder="First Name"
-                value={formdata.name}
+                value={formdata.first}
                 onChange={handlechange}
                 name="first"
                 required
