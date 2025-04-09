@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone, PhoneCall } from "lucide-react";
 import React, { useState } from "react";
 import { toast } from "sonner";
+import {motion} from 'framer-motion'
 
 const Contact = () => {
   const [formdata, setFormdata] = useState({
@@ -48,7 +49,7 @@ const Contact = () => {
   return (
     <div className="w-full lg:px-20 px-5 py-10" id="contact">
       <div className="grid lg:grid-cols-2 grid-cols-1 items-center lg:justify-items-center">
-        <div className="w-full bg-[#160730] rounded-3xl sm:p-10 p-5">
+        <motion.div initial = {{x : -100 , opacity : 0}} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.3}} className="w-full bg-[#160730] rounded-3xl sm:p-10 p-5">
           <h1 className="text-5xl bg-gradient-to-r leading-[1.5] from-purple-800 via-purple-400 to-purple-100 bg-clip-text text-transparent font-extrabold">
             Let's work together!
           </h1>
@@ -57,7 +58,7 @@ const Contact = () => {
             message — let’s make something meaningful.
           </p>
 
-          <form className="grid grid-cols-2 gap-5 py-5" onSubmit={handlesubmit}>
+          <form  className="grid grid-cols-2 gap-5 py-5" onSubmit={handlesubmit} >
             <div className="col-span-2 sm:col-auto">
               <input
                 type="text"
@@ -138,9 +139,9 @@ const Contact = () => {
               {submitted ? "sending..." : "Send Message"}
             </button>
           </form>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col gap-10 lg:px-0 lg:py-0 py-10">
+        <motion.div initial = {{x : 100 , opacity : 0}} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.3}} className="flex flex-col gap-10 lg:px-0 lg:py-0 py-10">
           <div className="flex flex-row items-start gap-5">
             <div>
               <a href="tel:9116494204">
@@ -195,7 +196,7 @@ const Contact = () => {
               </address>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -41,11 +41,13 @@ const About = () => {
 </div>
 
 
+         <motion.div whileInView={{opacity : 1 , x : 0}} initial={{x : -100, opacity : 0}} transition={{duration : 1.4}}>
          <Link to='contact' smooth={true} duration={500} offset={-70}>
-         <motion.button whileInView={{opacity : 1 , x : 0}} initial={{x : -100, opacity : 0}}  transition={{duration : 0}} className="px-5 py-2 hover:bg-purple-600 text-white rounded-md cursor-pointer bg-gradient-to-r from-[#6D28D9] to-[#5B21B6] hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300">
+         <button  className="px-5 py-2 hover:bg-purple-600 text-white rounded-md cursor-pointer bg-gradient-to-r from-[#6D28D9] to-[#5B21B6] hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300">
             Contact Me
-          </motion.button>
+          </button>
          </Link>
+         </motion.div>
         </div>
 
         <div>

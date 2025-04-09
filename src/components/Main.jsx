@@ -7,6 +7,7 @@ import Contact from './Contact'
 import { Toaster } from 'sonner'
 import Skills from './Skills'
 import ScrollToTop from 'react-scroll-to-top'
+import Footer from './Footer'
 
 
 
@@ -33,6 +34,7 @@ const Main = () => {
           bottom: "1.5rem",
           zIndex: 100,
         }}/>
+        <Footer/>
     </div>
   )
 }
