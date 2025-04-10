@@ -7,12 +7,12 @@ const About = () => {
     <div className="w-full lg:px-20 px-5 py-10" id="about">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-items-center">
         <div>
-          <h1 className="text-5xl">
+          <motion.h1 className="text-5xl" initial={{y : -100 , opacity : 0}} whileInView={{y : 0 , opacity : 1}} transition={{duration : 0.5}}>
             <span className="bg-gradient-to-r from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold">
               About
             </span>{" "}
             me
-          </h1>
+          </motion.h1>
           <motion.p whileInView={{opacity : 1 , x : 0}} initial={{x : -100, opacity : 0}} transition={{duration : 0.3}} className="text-md pt-10 pb-5 leading-8">
             I'm a passionate Full-Stack Web Developer skilled in HTML, CSS,
             JavaScript, along with modern tools like React.js, Next.js, Tailwind

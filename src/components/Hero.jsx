@@ -63,11 +63,12 @@ const Hero = () => {
    </div>
       <div className='flex gap-3'>
         <a href="https://github.com/vinit-chawlaa">
-        <Github className='cursor-pointer hover:rotate-360 bg-gradient-to-r from-[#111260] to-[#302eb9] p-2 rounded-full hover:from-[#302eb9] hover:to-[#111260] transition-all duration-300' size={45}/>
+        <Github className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/>
         </a>
-        <Twitter className='cursor-pointer hover:rotate-360  bg-gradient-to-r from-[#111260] to-[#302eb9] p-2 rounded-full hover:from-[#302eb9] hover:to-[#111260] transition-all duration-300' size={45}/>
-        <Facebook className='cursor-pointer hover:rotate-360  bg-gradient-to-r from-[#111260] to-[#302eb9] p-2 rounded-full hover:from-[#302eb9] hover:to-[#111260] transition-all duration-300' size={45}/>
-        <Linkedin className='cursor-pointer hover:rotate-360  bg-gradient-to-r from-[#111260] to-[#302eb9] p-2 rounded-full hover:from-[#302eb9] hover:to-[#111260] transition-all duration-300' size={45}/>
+        <Twitter className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/>
+        <Facebook className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/>
+        <a href="https://www.linkedin.com/in/vinit-chawlaa-4a351a346/">
+        <Linkedin className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/></a>
       </div>
      </motion.div>
        </div>
