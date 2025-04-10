@@ -21,12 +21,12 @@ const Skills = () => {
 
   return (
     <div className="w-full lg:px-20 px-5 py-10" id="skills">
-      <motion.h1 initial={{y : -100 , opacity : 0}} whileInView={{y : 0 , opacity : 1}} transition={{duration : 0.5}} className="text-5xl py-10 bg-gradient-to-r  from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold">
+      <motion.h1 initial={{y : -100 , opacity : 0}} viewport={{ once: true }} whileInView={{y : 0 , opacity : 1}} transition={{duration : 0.5}} className="text-5xl py-10 bg-gradient-to-r  from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold">
         <span className="text-white px-3">MY</span>SKILLS
       </motion.h1>
 
       <div className="flex flex-col gap-5">
-        <motion.div initial={{x : -100 , opacity : 0}} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5}} className="grid lg:grid-cols-4 gap-5 grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
+        <motion.div initial={{x : -100 , opacity : 0}}  whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5}} className="grid lg:grid-cols-4 gap-5 grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
           <motion.div variants={container(2.5)} initial = 'initial' animate = 'animate' className="bg-[#160730] border-3 border-purple-500/70 w-full h-50 rounded-md flex justify-center items-center cursor-pointer hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)]">
            
           

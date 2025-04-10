@@ -9,10 +9,10 @@ const Project = () => {
     return (
 
         <div className='w-full pb-10 lg:px-20 px-5' id='project'>
-            <motion.h1 initial={{y : -100 , opacity : 0}} whileInView={{y : 0 , opacity : 1}} transition={{duration : 0.5}} className='text-4xl py-10'>Work <span className='bg-gradient-to-r from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold'>Experience</span></motion.h1>
+            <motion.h1 initial={{y : -100 , opacity : 0}} viewport={{ once: true }} whileInView={{y : 0 , opacity : 1}} transition={{duration : 0.5}} className='text-4xl py-10'>Work <span className='bg-gradient-to-r from-purple-800 via-purple-500 to-purple-400 bg-clip-text text-transparent font-extrabold'>Experience</span></motion.h1>
             <div className='grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center w-full  gap-10'>
                <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500}   glareEnable={false} >
-               <motion.div initial={{x : -100 , opacity : 0}} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.2}} className='w-full min-h-[300px] hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4d2289] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+               <motion.div initial={{x : -100 , opacity : 0}} viewport={{ once: true }} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.2}} className='w-full min-h-[300px] hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4d2289] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/ai.png" alt="" className='object-contain h-full w-full' />
@@ -26,7 +26,7 @@ const Project = () => {
                 </motion.div>
                </Tilt>
                <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500}   glareEnable={false} >
-                <motion.div initial={{x : 100 , opacity : 0}} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.4}} className='w-full  min-h-[300px]  hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                <motion.div initial={{x : 100 , opacity : 0}} viewport={{ once: true }} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.4}} className='w-full  min-h-[300px]  hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/deepseek.png" alt="" className='object-contain w-full h-full' />
@@ -42,7 +42,7 @@ const Project = () => {
                 
 
                 <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500}   glareEnable={false} >
-                <motion.div initial={{x : -100 , opacity : 0}} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.6}} className='w-full  min-h-[300px] hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                <motion.div initial={{x : -100 , opacity : 0}} viewport={{ once: true }} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.6}} className='w-full  min-h-[300px] hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/weather.png" alt="" className='object-contain h-full w-full' />
@@ -57,7 +57,7 @@ const Project = () => {
                 </Tilt>
 
                 <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={1500} glareEnable={false}>
-                <motion.div initial={{x : 100 , opacity : 0}} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.8}} className='w-full min-h-[300px]  hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
+                <motion.div initial={{x : 100 , opacity : 0}} viewport={{ once: true }} whileInView={{x : 0 , opacity : 1}} transition={{duration : 0.5 , delay : 0.8}} className='w-full min-h-[300px]  hover:shadow-[0_20px_50px_-10px_rgba(109,40,217,0.4)] rounded-3xl border-t-5 border-t-[#4A2084] p-3 bg-gradient-to-tl from-[#2e0a51] via-[#0d0219] to-[rgb(34,6,64)]'>
                     <div className='grid sm:grid-cols-[40%_auto] grid-cols-1 lg:gap-10 gap-5 justify-items-center items-center'>
                         <div>
                             <img src="/man.png" alt="" className='object-contain h-full w-full' />

@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 const Footer = () => {
   return (
-    <motion.div initial={{y : 100 , opacity : 0}} whileInView={{y : 0 , opacity : 1}} transition={{duration : 0.5 ,}} className='w-full  border-t-2 border-t-purple-500 flex justify-between items-center lg:px-20 lg:flex-row flex-col py-5'>
+    <motion.div initial={{y : 100 , opacity : 0}} whileInView={{y : 0 , opacity : 1}} viewport={{ once: true }} transition={{duration : 1 ,}} className='w-full  border-t-2 border-t-purple-500 flex justify-between items-center lg:px-20 lg:flex-row flex-col py-5'>
         <p className='text-md'>© 2025. All rights reserved.</p>
        <div className='flex flex-row items-center justify-center'>
         <img src="/vc1.png" alt="" className='w-20'/>
