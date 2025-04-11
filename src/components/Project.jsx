@@ -19,8 +19,10 @@ const Project = () => {
                         </div>
                         <div>
                             <h2 className='text-3xl py-5'>AI Image Generator</h2>
-                            <p className='text-md text-gray-300'>AI-powered image generator built with Next.js and Tailwind CSS and Shadcin Ui.</p>
-                            <button className='px-5 py-2 my-5 cursor-pointer  hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300 text-white rounded-md bg-gradient-to-r from-[#6D28D9] to-[#5B21B6]'>Live Demo</button>
+                          <p className='text-md text-gray-300'>AI-powered image generator built with Next.js and Tailwind CSS and Shadcin Ui.</p>
+                        <a href="https://imgiai.vercel.app/">
+                        <button className='px-5 py-2 my-5 cursor-pointer  hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300 text-white rounded-md bg-gradient-to-r from-[#6D28D9] to-[#5B21B6]'>Live Demo</button>
+                        </a>
                         </div>
                     </div>
                 </motion.div>
