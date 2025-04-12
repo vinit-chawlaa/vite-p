@@ -57,17 +57,17 @@ const Hero = () => {
        
      <motion.div variants={container(0.8)} initial = 'hidden' animate = 'visible' className='flex sm:flex-row flex-col gap-7 py-5 lg:justify-start justify-center items-center lg:items-start'>
    <div>
-   <a href="/vinit.pdf" download>
+   <a href="/vinit.pdf" download target='_blank'>
    <button className='px-5 py-2   text-white rounded-md cursor-pointer bg-gradient-to-r from-purple-700 via-purple-600 to-purple-800 hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300'>Downlaod CV </button>
    </a>
    </div>
       <div className='flex gap-3'>
-        <a href="https://github.com/vinit-chawlaa">
+        <a href="https://github.com/vinit-chawlaa" target='_blank'>
         <Github className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/>
         </a>
         <Twitter className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/>
         <Facebook className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/>
-        <a href="https://www.linkedin.com/in/vinit-chawlaa-4a351a346/">
+        <a href="https://www.linkedin.com/in/vinit-chawlaa-4a351a346/" target='_blank'>
         <Linkedin className='cursor-pointer hover:rotate-360 border-purple-500 border-2 rounded-full p-2 transition-all duration-300' size={45}/></a>
       </div>
      </motion.div>
