@@ -89,7 +89,7 @@ const Hero = () => {
           className="flex sm:flex-row flex-col gap-7 py-5 lg:justify-start justify-center items-center lg:items-start"
         >
           <div>
-            <a href="/vinit.pdf" download target="_blank">
+            <a href="/vinit_new.pdf" download target="_blank">
               <button className="px-5 py-2   text-white rounded-md cursor-pointer bg-gradient-to-r from-purple-700 via-purple-600 to-purple-800 hover:from-[#5B21B6] hover:to-[#6D28D9] transition-all duration-300">
                 Downlaod CV{" "}
               </button>
